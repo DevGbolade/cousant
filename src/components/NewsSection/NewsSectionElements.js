@@ -15,6 +15,10 @@ export const NewsContainer = styled.div`
 `;
 export const NewsH1 = styled.h1`
   margin-top: 40px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+    /* display: none; */
+  }
 `;
 export const NewsText = styled.p`
   color: #255bcf;
@@ -22,8 +26,11 @@ export const NewsText = styled.p`
   font-weight: 500;
   margin-top: 10px;
   @media screen and (max-width: 768px) {
-    text-align: left;
-    display: none;
+    text-align: center;
+    font-weight: normal;
+    /* display: none;
+     */
+    font-size: 16px;
   }
 `;
 export const NewsMenu = styled.div`

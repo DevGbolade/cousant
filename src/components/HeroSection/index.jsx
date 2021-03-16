@@ -12,11 +12,9 @@ import {
     HeroSubContainer
 } from './HeroElements';
 import  Image from '../../assets/images/image-1.jpg';
-// import { Button } from '../ButtonElement';
 
 const HeroSection = () => {
-    // const [hover, setHover] = useState(false);
-    // const onHover = () => setHover(!hover);
+
     return (
         <HeroContainer id='home'>
             <HeroBg>
@@ -28,10 +26,7 @@ const HeroSection = () => {
                 <HeroP>
                    We are a <br/> Bank of the <br/> young and for <br/> the young
                 </HeroP>
-                </HeroSubContainer>
-                {/* <HeroH1>Virtual Banking</HeroH1> */}
-              
-               
+                </HeroSubContainer>           
             </HeroContent>
         </HeroContainer>
     )
