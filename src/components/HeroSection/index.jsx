@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { 
     HeroContainer, 
     HeroBg, 
@@ -15,8 +15,8 @@ import  Image from '../../assets/images/image-1.jpg';
 // import { Button } from '../ButtonElement';
 
 const HeroSection = () => {
-    const [hover, setHover] = useState(false);
-    const onHover = () => setHover(!hover);
+    // const [hover, setHover] = useState(false);
+    // const onHover = () => setHover(!hover);
     return (
         <HeroContainer id='home'>
             <HeroBg>
