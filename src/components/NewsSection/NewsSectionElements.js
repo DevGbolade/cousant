@@ -4,7 +4,14 @@ import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 export const NewsContainer = styled.div`
   display: flex;
   flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
   padding: 0 7rem;
+  @media screen and (max-width: 768px) {
+    align-items: center;
+
+    padding: 0 7rem;
+  }
 `;
 export const NewsH1 = styled.h1`
   margin-top: 40px;
@@ -14,12 +21,22 @@ export const NewsText = styled.p`
   font-size: 24px;
   font-weight: 500;
   margin-top: 10px;
+  @media screen and (max-width: 768px) {
+    text-align: left;
+    display: none;
+  }
 `;
 export const NewsMenu = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   margin-top: 50px;
   line-height: 1.6;
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+  @media screen and (max-width: 420px) {
+    grid-template-columns: repeat(2, fr);
+  }
 `;
 export const NavigationButtons = styled.div`
   position: relative;
@@ -33,18 +50,12 @@ export const Pagination = styled.nav`
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 20px;
-  i {
-    text-align: center;
-    padding-top: -50px;
-    font-size: 12px;
-  }
 `;
 export const PaginationNo = styled.nav`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   span:first-child {
-    /* padding: 1rem 0; */
     width: 20px;
     text-align: center;
     border-top: 2px solid black;
